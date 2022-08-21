@@ -7,24 +7,52 @@ const ctx = canvas.getContext('2d');
 // Create ball props
 const ball = {
     x: canvas.width / 2,
-    y: canvas.height /2,
+    y: canvas.height / 2,
     size: 10,
     speed: 4,
     dx: 4,
-    dy: 4
+    dy: -4,
+    visible: true
+};
+
+// Create paddle props
+const paddle = {
+    x: canvas.width / 2 - 40,
+    y: canvas.height -20,
+    w: 80,
+    h: 10,
+    speed: 8,
+    dx: 0,
+    visible: true
 };
 
 // Draw ball on canvas 
 function drawBall() {
     ctx.beginPath();
-    ctx.arc(ball.x, ball.y, ball.sixe, 0, Match.PI * 2);
+    ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
     ctx.fillStyle = '#0095dd';
     ctx.fill();
     ctx.closePath();
 }
 
-drawBall();
+// Draw paddle on canvas
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.rect(paddle.x, paddle.y, paddle.w, paddle.h);
+    ctx.fillStyle = '#0095d';
+    ctx.fill();
+    ctx.closePath();
+}
+
+//  Draw everything
+function draw() {
+    drawBall();
+    drawPaddle();
+}
+
+draw();
 
 // Rules and close event handlers
 rulesBtn.addEventListener('click', () => rules.classList.add('show'));
 closeBtn.addEventListener('click', () => rules.classList.remove('show'));
+	
