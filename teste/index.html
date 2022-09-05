@@ -14,13 +14,78 @@
             <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user">
         </div>
         <ul>
-            <li><a herf="#">Home</a></li>
-            <li><a herf="#">Portfolio</a></li>
-            <li><a herf="#">Blog</a></li>
-            <li><a herf="#">Contact Me</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Me</a></li>
         </ul>
     </nav>
 
-    <script src="script.js"></script>
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <h1>My Landing Page</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reiciendis!</p>
+        
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+    
+    <div class="contaienr">
+        <h2>What is this landing page about?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores expedita voluptates omnis iusto quam sed qui optio? Doloremque voluptatum accusantium, nostrum quibusdam quas voluptas, expedita ea dolorem earum a eligendi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat ducimus esse quia? Eaque repellat, inventore obcaecati quos officiis magnam!</p>
+        
+
+        <h2>Tell Me More</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis unde vel possimus obcaecati aspernatur dolor numquam, vitae vero placeat doloribus quidem odio quis autem aliquid, reiciendis nisi iusto laudantium maiores ipsa dignissimos natus? Laudantium explicabo reprehenderit nemo totam sint.</p>
+    
+        <h2>Benefits</h2>
+        <ul>
+            <li>Lifetime Access</li>
+            <li>30 Day Money Back</li>
+            <li>Tailored Customer Support</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis unde vero hic assumenda quam dolores neque quasi eveniet sed! Magnam sunt ipsa, voluptatem eveniet in officia? Aut blanditiis beatae explicabo ratione atque numquam cupiditate repudiandae facilis nemo tempora, facere inventore in voluptatem soluta nihil dicta, sequi repellat harum sapiente molestias labore porro reiciendis suscipit! Dolorum vel voluptatem culpa, adipisci minima ad modi quas accusantium, ex sed eos provident deserunt! Libero?</p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="colse-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us to get offers, support and more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script"></script>
 </body>
 </html>
