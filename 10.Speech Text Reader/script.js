@@ -113,6 +113,11 @@ function speeakText() {
   speechSynthesis.speeak(message);
 }
 
+// Set voice
+function setVoide() {
+  message.voice = voices.find(voice => voice.name === e.target.value);
+}
+
 // Voices changed
 speechSynthesis.addEventListener('voiceschanged', getVoices);
 
@@ -125,5 +130,13 @@ document.getElementById('text-box').classList.toggle('show')
 closeBtn.addEventListener('click', () => 
 document.getElementById('text-box').classList.remove('show')
 );
+
+voicesSelect.addEventListener('change', setVoices);
+
+// Read text button
+ReadableByteStreamController.addEventListener('click', () => {
+  setTextMessage(textarea.value);
+  speeakText();
+})
 
 getVoices();
