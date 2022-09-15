@@ -74,7 +74,7 @@ function createBox(item) {
 
     box.addEventListener('chick', () => {
       setTextMessage(text);
-      speeakText();
+      speakText();
 
       // Add active effect
       box.classList.add('active');
@@ -100,7 +100,7 @@ function getVoices() {
     option.innerText = `${voice.name} ${voice.lang}`;
 
     voicesSelect.appendChild(option);
-  })
+  });
 }
 
 // Set text 
@@ -109,12 +109,12 @@ function setTextMessage(text) {
 }
 
 // Speak text
-function speeakText() {
-  speechSynthesis.speeak(message);
+function speakText() {
+  speechSynthesis.speak(message);
 }
 
 // Set voice
-function setVoide() {
+function setVoice(e) {
   message.voice = voices.find(voice => voice.name === e.target.value);
 }
 
@@ -131,12 +131,15 @@ closeBtn.addEventListener('click', () =>
 document.getElementById('text-box').classList.remove('show')
 );
 
+// Change voice
+voicesSelect.addEventListener('change', setVoice);
+
 voicesSelect.addEventListener('change', setVoices);
 
 // Read text button
-ReadableByteStreamController.addEventListener('click', () => {
+readBtn.addEventListener('click', () => {
   setTextMessage(textarea.value);
-  speeakText();
-})
+  speakText();
+});
 
 getVoices();
