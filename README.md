@@ -13,4 +13,6 @@ This is the main repository for all of the projects.
 | 07  |  [New Year Countdown](https://github.com/marianaspinto/Curso-20-Projects-With-Vanilla-Javascript/tree/master/07.New%20Year%20Countdown)  | [Direct Link](https://newyearacount.netlify.app/)  |
 | 08  |  [Relaxer App](https://github.com/marianaspinto/Curso-20-Projects-With-Vanilla-Javascript/tree/master/08.Relaxer%20App)  | [Direct Link](https://relaxerapp10.netlify.app/)  |
 | 09  |  [Lyrics Search App](https://github.com/marianaspinto/Curso-20-Projects-With-Vanilla-Javascript/tree/master/09.Lyrics%20Search%20App)  | [Direct Link](https://lyricssearchapp1.netlify.app/)  |
+| 10  |  [Speech Text Reader](https://github.com/marianaspinto/Curso-20-Projects-With-Vanilla-Javascript/tree/master/10.Speech%20Text%20Reader)  | [Direct Link](http://127.0.0.1:5500/10.Speech%20Text%20Reader/index.html)  |
+| 11  |  [Memory Cards](https://github.com/marianaspinto/Curso-20-Projects-With-Vanilla-Javascript/tree/master/11.Memory%20Cards)  | [Direct Link](https://memorycards0.netlify.app/)  |
 
